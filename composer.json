@@ -1,0 +1,29 @@
+{
+  "name": "rebel-l/workshops",
+  "description": "This repository is a collection of workshops.",
+  "type": "project",
+  "keywords": [
+    "automated tests",
+    "continous integration",
+    "workshop",
+    "php unit"
+  ],
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "rebel-l/sisa": "1.6.*",
+    "phpunit/phpunit": "5.5.*"
+  },
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Rebel-L",
+      "email": "dj@rebel-l.net",
+      "homepage": "https://github.com/rebel-l",
+      "role": "CTO"
+    }
+  ],
+  "minimum-stability": "stable",
+  "support": {
+    "issues": "https://github.com/rebel-l/workshops/issues"
+  }
+}
