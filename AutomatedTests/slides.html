@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/reveal.css">
     <link rel="stylesheet" href="assets/css/black.css">
     <!--<link rel="stylesheet" href="assets/css/night.css">-->
+	<link rel="stylesheet" href="assets/css/zenburn.css">
 </head>
 <body>
     <div class="reveal">
@@ -15,7 +16,7 @@
             </section>
             <section>
                 <pre>
-                    <code data-trim data-noescape>
+                    <code>
                         class MyClass
                         {
                             public function execute()
@@ -39,11 +40,19 @@
             </section>
         </div>
     </div>
+    <script src="assets/js/head.min.js"></script>
     <script src="assets/js/reveal.js"></script>
     <script>
         Reveal.initialize({
             "backgroundTransition": "slide",
-            "slideNumber": true
+            "slideNumber": true,
+            "dependencies": [
+                {
+                    "src": 'assets/js/highlight.js',
+                    "async": false,
+                    "callback": function() { hljs.initHighlightingOnLoad(); }
+                }
+            ]
         });
     </script>
 </body>
