@@ -14,23 +14,57 @@
         <div class="slides">
 			<!-- SLIDE 1 -->
             <section data-transition="zoom">
-                <h2><small class="middle">Workshop:</small> <strong>Automated Tests</strong></h2>
+                <h2 class="title"><small class="middle">Workshop:</small> <strong>Automated Tests</strong></h2>
 				<p class="first"><small>by Rebel L</small></p>
 				<p><small>Contact: dj@rebel-l.net</small></p>
             </section>
 
 			<!-- SLIDE 2 -->
 			<section data-transition="zoom">
-				<h2>Types of Automated Tests</h2>
+				<h2 class="title">Types of Automated Tests</h2>
 				<p class="fragment">Unit Tests</p>
 				<p class="fragment">Component / Integration Tests</p>
 				<p class="fragment">Functional / Acceptance Tests</p>
 				<p class="fragment">Deployment Tests</p>
 				<p class="fragment">System Tests</p>
+				<p class="fragment">Performance Tests</p>
 				<p class="fragment">Stress Tests</p>
 			</section>
 
+			<!-- SLIDE 3 -->
+			<section data-transition="zoom">
+				<h2 class="title">Characteristics of Unit Tests</h2>
+				<ul>
+					<li>tests small units e.g. a method or a class</li>
+					<li>abstract all dependencies</li>
+					<li>never use database, file system etc.</li>
+					<li>runs fast</li>
+				</ul>
+			</section>
 
+			<!-- SLIDE 4 -->
+			<section data-transition="zoom">
+				<h2 class="title">Characteristics of <br>Component Tests</h2>
+				<ul>
+					<li>tests one component</li>
+					<li>use dependencies</li>
+					<li>use database, file system etc.</li>
+					<li class="fragment highlight-current-red">doesn't bootstrap whole application</li>
+				</ul>
+			</section>
+
+			<!-- SLIDE 5 -->
+			<section data-transition="zoom">
+				<h2 class="title">Unit vs. Component Tests</h2>
+				<p><strong>component tests</strong>:</p>
+				<p align="left">use dependent classes</p>
+				<p align="left">==> can fail on failing dependencies</p>
+				<p align="left">need complex setup</p>
+				<p align="left">==> different bootstrapping</p>
+				<p align="left">slower than unit tests</p>
+				<p class="fragment highlight-green first">==> <strong>focus on unit tests</strong></p>
+			</section>
+			
 			<!-- Testslides -->
             <section data-transition="zoom">
                 <pre>
