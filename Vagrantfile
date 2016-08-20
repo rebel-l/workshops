@@ -32,6 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             chef.add_role "Default"
             chef.environment = "development"
             chef.add_recipe "NodeJs"
+            chef.add_recipe "Php::cli"
             chef.add_recipe "Php::composer"
         end
     end
