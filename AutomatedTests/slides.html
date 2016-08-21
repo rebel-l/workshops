@@ -103,17 +103,33 @@ class Devision
 				<!-- SLIDE 7.2 -->
 				<section>
 					<h2 class="title">Test deafult values / behaviour</h2>
+					<p>avoids failing dependencies</p>
 					<p class="first">Example #02</p>
 				</section>
 
 				<!-- Slide 7.3 -->
 				<section>
 					<h2 class="title">Test public methods only</h2>
+					<p>detects dead code</p>
 					<p class="first">Example #03</p>
 				</section>
 			</section>
 
-
+			<!-- Somewhere -->
+			<section>
+				<h2 class="title">Organizing Tests</h2>
+				<pre>
+					<code>
+root
+	└ tests
+		└ Component
+			└ phpunit.xml
+		└ Unit
+			└ phpunit.xml
+	└ phpunit.xml # running Component & Unit test creating one coverage
+					</code>
+				</pre>
+			</section>
 
 			<!-- Last SLIDE -->
 			<section data-transition="zoom">
