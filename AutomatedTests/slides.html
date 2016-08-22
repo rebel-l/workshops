@@ -119,15 +119,21 @@ class Devision
 			<section>
 				<h2 class="title">Organizing Tests</h2>
 				<pre>
-					<code>
+					<quote>
 root
-	└ tests
-		└ Component
-			└ phpunit.xml
-		└ Unit
-			└ phpunit.xml
-	└ phpunit.xml # running Component & Unit test creating one coverage
-					</code>
+  └ tests
+    └ Component
+      └ phpunit.xml
+      └ report
+        └ ... # component test coverage report
+    └ Unit
+      └ phpunit.xml
+      └ report
+        └ ... # unit test coverage report
+    └ report
+      └ ... # over all coverage report
+    └ phpunit.xml # running Component & Unit test creating one coverage
+					</quote>
 				</pre>
 			</section>
 
