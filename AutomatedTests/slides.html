@@ -68,24 +68,32 @@
 
 			<!-- SLIDE 6 -->
 			<section>
-				<h2 class="title"><small class="middle">General</small>: Best Practices</h2>
-				<ul>
-					<li>test always positive and negative case</li>
-					<li>test default values/behaviour</li>
-					<li>test public methods only</li>
-					<li>use dependency injection</li>
-					<li>avoid classes that are not unittestable</li>
-					<li>test abstract classes / traits once</li>
-					<li>rely on third party libraries/frameworks</li>
-					<li>JS/PHP: test in strict mode</li>
-				</ul>
-			</section>
-
-			<!-- SLIDE 7 -->
-			<section data-transition="zoom">
-				<!-- SLIDE 7.1 -->
+				<!-- SLIDE 6.1 -->
 				<section>
-					<h2 class="title">Unit Tests: Positive & Negative Case</h2>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Best Practices
+					</h2>
+					<ul>
+						<li>test always positive and negative case</li>
+						<li>test default values/behaviour</li>
+						<li>test public methods only</li>
+						<li>use dependency injection</li>
+						<li>avoid classes that are not unittestable</li>
+						<li>test abstract classes / traits once</li>
+						<li>define which methods you test (see @covers)</li>
+						<li>rely on third party libraries/frameworks</li>
+						<li>JS/PHP: test in strict mode</li>
+						<li>PHP: root Exception is forbidden</li>
+					</ul>
+				</section>
+
+				<!-- SLIDE 6.2 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Test Positive & Negative Cases
+					</h2>
 					<p>Example #01</p>
 					<pre>
 						<code class="hljs php">
@@ -100,18 +108,94 @@ class Devision
 					</pre>
 				</section>
 
-				<!-- SLIDE 7.2 -->
+				<!-- Slide 6.3 -->
 				<section>
-					<h2 class="title">Test deafult values / behaviour</h2>
-					<p>avoids failing dependencies</p>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Test public methods only
+					</h2>
+					<p>detects dead code</p>
 					<p class="first">Example #02</p>
+				</section>
+
+				<!-- Slide 6.4 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Use Dataproviders
+					</h2>
+					<!-- TODO -->
+					<p class="first">Example #03</p>
+				</section>
+
+				<!-- Slide 6.5 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Assert exceptions
+					</h2>
+					<!-- TODO -->
+					<p class="first">Example #04</p>
+				</section>
+
+				<!-- Slide 6.6 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Don't expect root Exception
+					</h2>
+					<!-- TODO -->
+					<p class="first">Example #05</p>
+				</section>
+
+				<!-- Slide 6.7 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">General</small>:
+						Use @covers annotation
+					</h2>
+					<!-- TODO -->
+					<p class="first">Example #06</p>
+				</section>
+			</section>
+
+			<!-- SLIDE 7 -->
+			<section data-transition="zoom">
+				<!-- SLIDE 7.1 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						Test deafult values / behaviour
+					</h2>
+					<p>avoids failing dependencies</p>
+					<p class="first">Example #07</p>
+				</section>
+
+				<!-- Slide 7.2 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						Use dependency injection
+					</h2>
+					<!-- TODO -->
 				</section>
 
 				<!-- Slide 7.3 -->
 				<section>
-					<h2 class="title">Test public methods only</h2>
-					<p>detects dead code</p>
-					<p class="first">Example #03</p>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						Avoid not unittestable classes
+					</h2>
+					<!-- TODO -->
+				</section>
+
+				<!-- Slide 7.4 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						Problem Singleton & Factories
+					</h2>
+					<!-- TODO -->
 				</section>
 			</section>
 
