@@ -28,3 +28,7 @@ Now connect with an ssh client to virtual machine:
     sudo apt-get install php7.0-xml
     switchXdebug 1  # shortcut enabling xdebug
     cdproj          # shortcut to get to project folder
+    
+To execute the examples do it the following way:
+
+    vendor/bin/phpunit -c AutomatedTests/examples/php/04/good/phpunit.xml
