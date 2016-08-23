@@ -272,9 +272,53 @@ class Devision
 					<p>getMockForAbstractClass() ==> mocks all abstract methods</p>
 					<p class="first">Example #12</p>
 				</section>
+
+				<!-- Slide 7.8 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						Mock Traits
+					</h2>
+					<p>getMockForTrait() ==> creates object using trait</p>
+					<p class="first">Example #13</p>
+					<!-- TODO -->
+				</section>
+
+				<!-- Slide 7.9 -->
+				<section>
+					<h2 class="title">
+						<small class="middle">Unit Tests</small>:
+						TDD
+					</h2>
+					<p>Test Driven Development</p>
+					<p>write test first</p>
+					<p>implement class afterwards</p>
+					<p>execute tests ==> should be green</p>
+					<p class="first">Example #14</p>
+					<!-- TODO -->
+				</section>
 			</section>
 
-			<!-- Somewhere -->
+			<!-- Slide 8 -->
+			<section data-transition="zoom">
+				<h2 class="title">Component Tests</h2>
+				<ul>
+					<li>Don't repeat whole unit tests</li>
+					<li>Don't rely on data of previous tests</li>
+					<li>Reset fixtures after every test, better before!</li>
+					<li>use @depends to mark test dependencies</li>
+					<li>bootstrap database connection</li>
+				</ul>
+			</section>
+
+			<!-- Slide 9 -->
+			<section data-transition="zoom">
+				<h2 class="title">Layout Tests</h2>
+				<p>Have a look at Galen Framework</p>
+				<a href="http://galenframework.com/" target="_blank">http://galenframework.com/</a>
+			</section>
+
+			<!-- Slide 10 -->
 			<section>
 				<h2 class="title">Organizing Tests</h2>
 				<pre>
@@ -294,7 +338,7 @@ root
 				</pre>
 			</section>
 
-			<!-- Last SLIDE -->
+			<!-- Slide 11 -->
 			<section data-transition="zoom">
 				<h2 class="title">
 					Working With Continuous<br>
@@ -324,42 +368,14 @@ root
 			<section data-transition="zoom">
 				<h2 class="title">Thank You!</h2>
 				<p>Find the presentation and code examples at:</p>
-				<a href="https://github.com/rebel-l/workshops/tree/master/AutomatedTests">
+				<a href="https://github.com/rebel-l/workshops/tree/master/AutomatedTests" target="_blank">
 					https://github.com/rebel-l/workshops/tree/master/AutomatedTests
 				</a>
 				<p>Follow me:</p>
-				<a href="https://github.com/rebel-l">https://github.com/rebel-l</a>
-				<a href="https://www.xing.com/profile/Lars_Gaubisch">https://www.xing.com/profile/Lars_Gaubisch</a>
-				<a href="https://de.linkedin.com/in/lars-gaubisch-a6b1a423">https://de.linkedin.com/in/lars-gaubisch-a6b1a423</a>
+				<a href="https://github.com/rebel-l" target="_blank">https://github.com/rebel-l</a>
+				<a href="https://www.xing.com/profile/Lars_Gaubisch" target="_blank">https://www.xing.com/profile/Lars_Gaubisch</a>
+				<a href="https://de.linkedin.com/in/lars-gaubisch-a6b1a423" target="_blank">https://de.linkedin.com/in/lars-gaubisch-a6b1a423</a>
 			</section>
-
-			<!-- Testslides -->
-            <section data-transition="zoom">
-                <pre>
-                    <code>
-                        class MyClass
-                        {
-                            public function execute()
-                            {
-
-                            }
-                        }
-                    </code>
-                </pre>
-            </section>
-            <section data-transition="fade in">
-                <h2>Some Bulletpoints</h2>
-                <p class="fragment">First</p>
-                <p class="fragment">Second</p>
-                <p class="fragment">Third</p>
-                <pre class="fragment">
-                    <code class="hljs bash">
-#!/bin/bash
-
-sudo apt-get install php7.0-cli
-                    </code>
-                </pre>
-            </section>
         </div>
     </div>
     <script src="assets/js/head.min.js"></script>
