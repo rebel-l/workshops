@@ -238,9 +238,18 @@ class Devision
 				<section>
 					<h2 class="title">
 						<small class="middle">Unit Tests</small>:
-						Problem Singleton & Factories
+						Problem Singleton & (static) Factories
 					</h2>
-					<!-- TODO -->
+					<ul>
+						<li>static calls are not mockable</li>
+						<li>Singletons are not instanceable with <strong>new</strong> operator</li>
+					</ul>
+					<p>Solution:</p>
+					<ul>
+						<li>avoid Singletons</li>
+						<li>wrap getInstance() method</li>
+						<li>use Factories with object methods only</li>
+					</ul>
 				</section>
 			</section>
 
