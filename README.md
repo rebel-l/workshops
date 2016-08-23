@@ -25,5 +25,6 @@ First execute the following on a command line interface of your host system:
 Now connect with an ssh client to virtual machine:
 
     ssh workshop.dev
+    sudo apt-get install php7.0-xml
     switchXdebug 1  # shortcut enabling xdebug
     cdproj          # shortcut to get to project folder
