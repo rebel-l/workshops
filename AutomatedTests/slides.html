@@ -311,33 +311,29 @@ class Devision
 			</section>
 
 			<!-- Slide 9 -->
-			<section data-transition="zoom">
-				<h2 class="title">Layout Tests</h2>
-				<p>Have a look at Galen Framework</p>
-				<a href="http://galenframework.com/" target="_blank">http://galenframework.com/</a>
-			</section>
-
-			<!-- Slide 10 -->
 			<section>
 				<h2 class="title">Organizing Tests</h2>
 				<pre>
 root
   └ tests
     └ Component
-      └ phpunit.xml
       └ report
         └ ... # component test coverage report
-    └ Unit
+      └ bootstrap.php
       └ phpunit.xml
+    └ Unit
       └ report
         └ ... # unit test coverage report
+      └ bootstrap.php
+      └ phpunit.xml
     └ report
       └ ... # over all coverage report
+    └ bootstrap.php
     └ phpunit.xml # running Component & Unit test creating one coverage
 				</pre>
 			</section>
 
-			<!-- Slide 11 -->
+			<!-- Slide 10 -->
 			<section data-transition="zoom">
 				<h2 class="title">
 					Working With Continuous<br>
@@ -350,6 +346,11 @@ root
 				<ul>
 					<li>run unit tests</li>
 					<li>run component tests</li>
+				</ul>
+				<p>
+					should be build nightly:
+				</p>
+				<ul>
 					<li>run deployment tests</li>
 					<li>run acceptance tests</li>
 					<li>run layout tests</li>
@@ -357,6 +358,13 @@ root
 				<p class="fragment highlight-blue">
 					Rule: on fail fix it immediately
 				</p>
+			</section>
+
+			<!-- Slide 11 -->
+			<section data-transition="zoom">
+				<h2 class="title">Layout Tests</h2>
+				<p>Have a look at Galen Framework</p>
+				<a href="http://galenframework.com/" target="_blank">http://galenframework.com/</a>
 			</section>
 
 			<!-- Final Slides -->
