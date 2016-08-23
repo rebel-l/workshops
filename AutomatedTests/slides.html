@@ -192,18 +192,28 @@ class Devision
 				<section>
 					<h2 class="title">
 						<small class="middle">Unit Tests</small>:
-						Use dependency injection
+						Avoid not unittestable classes
 					</h2>
-					<!-- TODO -->
+					<p>forbidden:</p>
+					<ul>
+						<li>exit()</li>
+						<li>die()</li>
+					</ul>
+					<p>avoid:</p>
+					<ul>
+						<li>static methods/calls</li>
+						<li>global functions</li>
+					</ul>
 				</section>
 
 				<!-- Slide 7.3 -->
 				<section>
 					<h2 class="title">
 						<small class="middle">Unit Tests</small>:
-						Avoid not unittestable classes
+						Use dependency injection
 					</h2>
-					<!-- TODO -->
+					<p>keeps classes unit testable</p>
+					<p class="first">Example #09</p>
 				</section>
 
 				<!-- Slide 7.4 -->
