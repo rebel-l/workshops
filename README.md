@@ -24,7 +24,7 @@ First execute the following on a command line interface of your host system:
     
 Now connect with an ssh client to virtual machine:
 
-    ssh vagrant@workshop.dev    # pw: vagrant alternative use the unsecure vagrant key or 'vgrant ssh' 
+    ssh vagrant@workshop.dev    # pw: vagrant alternative use the unsecure vagrant key or 'vagrant ssh' command
     switchXdebug 1              # shortcut enabling xdebug
     cdproj                      # shortcut to get to project folder
     
